@@ -1,0 +1,77 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+.Python
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Editors/OS
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Training outputs and checkpoints
+results/
+experiments/
+exp_dir/
+**/pretrain/
+*.pth
+*.pt
+*.ckpt
+*.onnx
+
+# Cached metadata and temporary logs
+*.log
+*.tmp
+*.cache
+
+# Data artifacts (keep raw code, avoid uploading large datasets)
+data/
+datasets/
+submission/
+LMDB/
+Cached/
+
+# Local reference folder (do not upload)
+UESTC-Thesis-Latex-Template-main/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# LaTeX intermediate files
+*.aux
+*.acn
+*.acr
+*.alg
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.glg
+*.glo
+*.gls
+*.idx
+*.ilg
+*.ind
+*.ist
+*.lof
+*.log
+*.lot
+*.nav
+*.out
+*.run.xml
+*.snm
+*.synctex
+*.synctex.gz
+*.toc
+*.vrb
