@@ -7,14 +7,14 @@ This repository contains research code for facial Action Unit (AU) detection on 
 - multi-label AU prediction,
 - semi-supervised Mean Teacher training.
 
-It also includes a complete UESTC thesis LaTeX project used to document the research.
+A local UESTC thesis LaTeX folder can be kept alongside this codebase as reference material; it is excluded from Git tracking by default.
 
 ## Repository Scope
 
 This is a mixed workspace with two major parts:
 
 1. AU detection research code (training, evaluation, visualization, utilities).
-2. Thesis writing assets in `UESTC-Thesis-Latex-Template-main/`.
+2. Optional local thesis writing assets in `UESTC-Thesis-Latex-Template-main/` (ignored by Git).
 
 ## Project Structure
 
@@ -33,7 +33,7 @@ Key folders and files:
 - `test_aff2.py`, `test_aff2mm.py`: AU evaluation scripts
 - `show_loss.py`, `show_result.py`, `show_CAM.py`, `show_CAMmm.py`: analysis and visualization scripts
 - `opts*.py`: option presets for different experiments
-- `UESTC-Thesis-Latex-Template-main/`: thesis source (`main.tex`) and slides template
+- `UESTC-Thesis-Latex-Template-main/` (optional, local only): thesis source (`main.tex`) and slides template
 
 ## Environment Setup
 
@@ -138,17 +138,17 @@ For distributed training, use `train_mtmm.py` with `torchrun`.
 1. Several scripts still contain hard-coded absolute paths from the original research environment (Linux and Windows drives). Always pass your own paths through CLI arguments or edit defaults in `opts*.py`.
 2. Some model files include optional hard-coded pretrained checkpoint paths. If those files are missing, run without pretraining flags or replace paths.
 3. Inference scripts (`test_aff2*.py`) define `model_path` near the top; set it to your checkpoint.
-4. This repository contains both code and thesis assets; only commit/generated artifacts that are necessary for your use case.
+4. `UESTC-Thesis-Latex-Template-main/` is ignored at the repository root and is intended as local reference material, not part of the GitHub upload.
 
 ## Thesis Project Folder
 
-`UESTC-Thesis-Latex-Template-main/` is a full thesis template project, including:
+`UESTC-Thesis-Latex-Template-main/` is an optional local reference folder, including:
 
 - thesis source (`main.tex`),
 - bibliography and class files,
 - beamer slides template under `slides/`.
 
-Use that folder independently for document compilation and thesis writing.
+Use that folder independently for document compilation and thesis writing. It is excluded from the Git repository by root `.gitignore`.
 
 ## Acknowledgements
 
@@ -159,6 +159,6 @@ This project builds on ideas/codebases from:
 
 ## License
 
-Please refer to the corresponding upstream projects and the thesis template folder for license details of reused components.
+Please refer to the corresponding upstream projects and, if used locally, the thesis template folder for license details of reused components.
 
 
