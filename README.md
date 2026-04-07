@@ -71,13 +71,9 @@ The dataset package is shared via Baidu Netdisk.
 - Link: https://pan.baidu.com/s/1SRidNXatotEyuQS7VutX5A
 - Extraction code: `88k4`
 
-English translation of the original Chinese access note:
-
-- "This file is shared through Baidu Netdisk. Open the link in the Baidu Netdisk app and enter the extraction code to access it."
-
 ## 🧪 Training Modes and Model Choices
 
-- Full two-stage training: stage-1 CNN/Transformer training plus semi-supervised Mean Teacher fine-tuning (`train_all.py`)
+- Full training: CNN/Transformer training plus semi-supervised Mean Teacher fine-tuning (`train_all.py`)
 - Separate baseline experiments: `train.py`, `train2.py`, `train3.py` (different presets in `opts.py`, `opts2.py`, `opts3.py`)
 - Separate Mean Teacher experiments: `train_mt.py`, `train_mt2.py`
 - Multi-GPU Mean Teacher: `train_mtmm.py`
@@ -95,7 +91,7 @@ If a custom `--model_name` is not matched, training falls back to the baseline i
 
 ## 🚀 Quick Start
 
-Two-stage CNN/Transformer + Mean Teacher (recommended end-to-end):
+Two-stage CNN/Transformer + Mean Teacher (end-to-end):
 
 ```bash
 python train_all.py \
@@ -174,6 +170,6 @@ python test_aff2.py
 
 1. SMSH Rokib, H. Li, and J. Qi, "AU Detection Using HRNet-Transformer Multi-model," in Proc. International Youth Scholars Academic Exchange Symposium on International Conference on Ubiquitous Communications, Xi'an, China, Jul. 2024, pp. 86-90.
 
-2. SMSH Rokib and Q. Jin, related work from this project, Neurocomputing.
+2. SMSH Rokib and J. Qi, related work from this project, Neurocomputing. (The paper is under review or editorial consideration)
 
 
