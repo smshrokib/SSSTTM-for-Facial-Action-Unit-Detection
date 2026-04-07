@@ -2,10 +2,7 @@
 
 SSSTTM for multi-label facial AU detection on in-the-wild video data.
 
-With the rapid development of intelligent human-computer interaction, facial affective behavior analysis has become an important research area.
-Facial Action Unit detection is a fine-grained and anatomically interpretable representation, but robust performance in unconstrained environments is still challenging because facial motions are subtle, temporal dynamics are complex, AU dependencies are strong, and annotations are often incomplete.
-This repository implements a semi-supervised CNN-Transformer framework with spatial-temporal feature fusion, HRNet-based local representation learning, multimodal audio-visual modeling, and Mean Teacher consistency learning.
-The integrated two-stage design targets robust AU detection on Aff-Wild2-style settings.
+With the rapid development of intelligent human-computer interaction, facial affective behavior analysis has become an important research area. Facial Action Unit detection is a fine-grained and anatomically interpretable representation, but robust performance in unconstrained environments is still challenging because facial motions are subtle, temporal dynamics are complex, AU dependencies are strong, and annotations are often incomplete. This repository implements a semi-supervised CNN-Transformer framework with spatial-temporal feature fusion, HRNet-based local representation learning, multimodal audio-visual modeling, and Mean Teacher consistency learning. The integrated two-stage design targets robust AU detection on Aff-Wild2-style settings.
 
 ![SSSTTM Pipeline](Figures/Figure%201.png)
 
