@@ -2,10 +2,10 @@
 
 SSSTTM for multi-label facial AU detection on in-the-wild video data.
 
-This work targets robust facial Action Unit detection under real-world conditions where labels can be incomplete and facial dynamics are subtle.
-The framework combines CNN/HRNet feature extraction, Transformer-based spatial-temporal modeling, and audio-visual fusion.
-It further uses a semi-supervised Mean Teacher strategy to leverage partially labeled data and improve generalization.
-The overall system follows a two-stage training design and is evaluated on Aff-Wild2 style settings.
+With the rapid development of intelligent human-computer interaction, facial affective behavior analysis has become an important research area.
+Facial Action Unit detection is a fine-grained and anatomically interpretable representation, but robust performance in unconstrained environments is still challenging because facial motions are subtle, temporal dynamics are complex, AU dependencies are strong, and annotations are often incomplete.
+This repository implements a semi-supervised CNN-Transformer framework with spatial-temporal feature fusion, HRNet-based local representation learning, multimodal audio-visual modeling, and Mean Teacher consistency learning.
+The integrated two-stage design targets robust AU detection on Aff-Wild2-style settings.
 
 ![SSSTTM Pipeline](Figures/Figure%201.png)
 
@@ -173,12 +173,10 @@ python test_aff2.py
 - [Former-DFER](https://github.com/zengqunzhao/Former-DFER)
 - [Two-Stream Aural-Visual Affect Analysis in the Wild](https://github.com/kuhnkeF/ABAW2020TNT)
 
-## 📄 Publication Note
+## 📚 Publications
 
 1. SMSH Rokib, H. Li, and J. Qi, "AU Detection Using HRNet-Transformer Multi-model," in Proc. International Youth Scholars Academic Exchange Symposium on International Conference on Ubiquitous Communications, Xi'an, China, Jul. 2024, pp. 86-90.
 
-2. [5] SMSH Rokib and Q. Jin, *Semi-Supervised Multimodal CNN-Transformer for Facial Action Unit Detection via Spatial-Temporal Feature Fusion*, Neurocomputing.*
-
-* Indicates that the paper is under review or editorial consideration.
+2. SMSH Rokib and Q. Jin, related work from this project, Neurocomputing.
 
 
