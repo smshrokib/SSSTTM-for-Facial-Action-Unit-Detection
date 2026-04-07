@@ -81,7 +81,7 @@ If a custom `--model_name` is not matched, training falls back to the baseline i
 
 ## 🚀 Quick Start
 
-Two-stage supervised + Mean Teacher (recommended end-to-end):
+Two-stage supervised + Mean Teacher (end-to-end):
 
 ```bash
 python train_all.py \
